@@ -1,9 +1,14 @@
 import { GoogleLogo } from "phosphor-react";
 
-export function GButton() {
+interface GButtonProps {
+  click: React.MouseEventHandler;
+}
+
+export function GButton(props: GButtonProps) {
   return (
     <a
-      href=""
+      onClick={props.click}
+      href="#"
       className={
         "group bg-white hover:bg-slate-100 text-blue-600 transition-colors text-sm py-2 px-1  rounded-full max-h-12 font-bold uppercase"
       }

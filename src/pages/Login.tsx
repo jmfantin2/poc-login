@@ -1,6 +1,10 @@
 import { GButton } from "../components/gears/GButton";
 
 export function Login() {
+  function handleGLogin() {
+    console.log("vc tentou logar :)");
+  }
+
   return (
     <div className="min-h-screen bg-blur opacity-90 bg-cover bg-no-repeat flex flex-col items-center ">
       {/* call to action and sub box */}
@@ -17,7 +21,7 @@ export function Login() {
           </p>
 
           <div className="flex-1 flex justify-center mt-8">
-            <GButton />
+            <GButton click={handleGLogin} />
           </div>
         </div>
       </div>
