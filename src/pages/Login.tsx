@@ -1,3 +1,5 @@
+import { GButton } from "../components/gears/GButton";
+
 export function Login() {
   return (
     <div className="min-h-screen bg-blur opacity-90 bg-cover bg-no-repeat flex flex-col items-center">
@@ -14,7 +16,7 @@ export function Login() {
               </strong>
             </h1>
             <div className="flex-1 flex justify-center mt-8">
-              <strong className="text-white text-2xl">login</strong>
+              <GButton />
             </div>
           </div>
           <p className="ml-3 mt-4 min-w-[500px] text-lg text-white leading-relaxed">

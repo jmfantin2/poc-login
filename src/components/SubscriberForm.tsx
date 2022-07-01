@@ -8,6 +8,7 @@ export function SubscriberForm() {
   const [email, setEmail] = useState("");
 
   async function handleSubscribe(event: FormEvent) {
+    //TBD: mutate to GraphQL sublist
     navigate("/dash");
   }
 
